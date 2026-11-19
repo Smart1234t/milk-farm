@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #263329;
+  background: #f7f8f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+a { color: inherit; }
+
+.signup-layout {
+  display: grid;
+  grid-template-columns: minmax(330px, 0.9fr) minmax(440px, 1.1fr);
+  max-width: 1200px;
+  min-height: 730px;
+  margin: 4vh auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 24px 80px rgba(47, 63, 43, .12);
+}
+
+.welcome-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 730px;
+  padding: 42px 48px;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(24, 49, 34, .14), rgba(24, 49, 34, .85)), url('cow.jpg') center / cover;
+}
+
+.brand { z-index: 1; display: inline-flex; align-items: center; gap: 12px; width: fit-content; color: #fff; font-size: 18px; font-weight: 700; text-decoration: none; }
+.brand img { width: 45px; height: 45px; padding: 4px; object-fit: contain; background: #fff; border-radius: 50%; }
+.welcome-copy { z-index: 1; max-width: 380px; margin: auto 0; padding: 56px 0; }
+.eyebrow { color: #64886a; font-size: 11px; font-weight: 700; letter-spacing: .17em; }
+.welcome-panel .eyebrow { color: #e1edcf; }
+.welcome-copy h1 { margin: 14px 0; font: 600 clamp(40px, 5vw, 60px)/1.08 'Playfair Display', Georgia, serif; letter-spacing: -.035em; }
+.welcome-copy p { max-width: 320px; color: rgba(255,255,255,.88); font-size: 16px; line-height: 1.7; }
+.panel-note { z-index: 1; margin: 0; color: rgba(255,255,255,.8); font-size: 13px; }
+
+.form-panel { align-self: center; width: min(100%, 540px); margin: 0 auto; padding: 68px 72px; }
+.form-heading { margin-bottom: 32px; }
+.form-heading h2 { margin: 10px 0 8px; color: #263329; font: 600 34px/1.2 'Playfair Display', Georgia, serif; letter-spacing: -.025em; }
+.form-heading p { margin: 0; color: #7b847c; font-size: 14px; }
+.signup-form { display: flex; flex-direction: column; }
+.signup-form > label:not(.remember-row) { margin: 0 0 8px; color: #37463a; font-size: 13px; font-weight: 600; }
+.signup-form > input, .signup-form > textarea { width: 100%; min-height: 49px; margin: 0 0 20px; padding: 14px; border: 1px solid #dce3da; border-radius: 9px; outline: none; background: #fff; color: #263329; font: inherit; font-size: 14px; transition: border-color .18s, box-shadow .18s; }
+.signup-form > textarea { resize: vertical; line-height: 1.5; }
+.signup-form > input::placeholder, .signup-form > textarea::placeholder { color: #a0a8a0; }
+.signup-form > input:focus, .signup-form > textarea:focus { border-color: #628366; box-shadow: 0 0 0 3px rgba(98,131,102,.14); }
+.remember-row { display: flex; align-items: center; gap: 9px; margin: 0 0 23px; color: #687369; font-size: 13px; cursor: pointer; }
+.remember-row input { width: 16px; height: 16px; accent-color: #365d3e; }
+.signupbtn { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; min-height: 50px; border: 0; border-radius: 9px; background: #315c3d; color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; transition: background .18s, transform .18s; }
+.signupbtn:hover { transform: translateY(-1px); background: #264b31; }
+.signupbtn span { font-size: 18px; }
+.terms { margin: 16px 0 0; color: #929a92; font-size: 11px; line-height: 1.6; text-align: center; }
+.login-prompt { margin: 28px 0 0; color: #788078; font-size: 13px; text-align: center; }
+.login-prompt a { color: #315c3d; font-weight: 700; text-decoration: none; }
+.login-prompt a:hover, .home-link:hover { text-decoration: underline; }
+.home-link { display: block; margin-top: 34px; color: #858d85; font-size: 12px; text-align: center; text-decoration: none; }
+.mobile-brand { display: none; }
+
+[role="status"] { margin: 14px 0 0; padding: 12px; border-radius: 8px; background: #eff6eb; color: #315c3d !important; font-size: 13px; line-height: 1.5; }
+
+@media (max-width: 800px) {
+  .signup-layout { grid-template-columns: 1fr; max-width: 560px; min-height: 100vh; margin: 0 auto; border-radius: 0; }
+  .welcome-panel { display: none; }
+  .form-panel { width: 100%; padding: 42px clamp(24px, 8vw, 56px); }
+  .mobile-brand { display: inline-block; margin-bottom: 48px; color: #758075; font-size: 12px; text-decoration: none; }
+}
+
+@media (max-width: 420px) {
+  .form-panel { padding: 28px 23px; }
+  .mobile-brand { margin-bottom: 40px; }
+  .form-heading h2 { font-size: 30px; }
+}

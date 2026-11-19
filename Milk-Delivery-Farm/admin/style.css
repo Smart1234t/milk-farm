@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f5f7f1; color: #263329; font-family: Arial,sans-serif; }
+header { height: 68px; display: flex; align-items: center; justify-content: space-between; padding: 0 max(20px,calc((100vw - 1000px)/2)); background: #fff; border-bottom: 1px solid #e5ebe2; }
+header div { display:flex; align-items:center; gap:16px; }
+header a { color: #315c3d; font-size: 14px; font-weight: 700; text-decoration: none; }
+main { width: min(100% - 32px,900px); margin: 38px auto; }
+.back { color: #758075; font-size: 13px; text-decoration: none; }
+.panel { margin-top: 18px; padding: clamp(22px,5vw,44px); border: 1px solid #e5ebe2; border-radius: 16px; background: white; box-shadow: 0 14px 45px rgba(47,63,43,.06); }
+.eyebrow { margin: 0 0 9px; color: #66836a; font-size: 10px; font-weight: 700; letter-spacing: .15em; }
+h1 { margin: 0; font: 600 32px/1.2 Georgia,serif; }
+.intro { margin: 10px 0 26px; color: #7b857b; font-size: 14px; line-height: 1.55; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th { padding: 12px 10px; border-bottom: 1px solid #e5ebe2; color: #778177; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+td { padding: 17px 10px; border-bottom: 1px solid #edf0eb; color: #39463b; font-size: 14px; }
+td small { display: block; margin-top: 5px; color: #879087; font-size: 11px; }
+.admin-field { display: flex; align-items: center; gap: 5px; }
+input { width: 118px; height: 40px; padding: 0 10px; border: 1px solid #dce3da; border-radius: 7px; font: inherit; }
+.stock-input { width: 100px; }
+input:focus { border-color: #628366; outline: 2px solid rgba(98,131,102,.13); }
+button { min-height: 46px; margin-top: 23px; padding: 0 22px; border: 0; border-radius: 8px; background: #315c3d; color: white; font-size: 14px; font-weight: 700; cursor: pointer; }
+button:hover { background: #264b31; }
+.demo-note { margin: 24px 0 0; padding: 12px; border-radius: 8px; background: #f5f7f1; color: #758075; font-size: 12px; line-height: 1.6; }
+.orders-panel { margin-top: 24px; }
+.customer-panel { margin-top:24px; }
+.new-users-panel { margin-bottom:24px; }
+.customer-panel h2,.orders-list-heading h2 { margin:0; font:600 25px/1.2 Georgia,serif; }
+.customer-directory { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; }
+.customer-summary { padding:17px; border:1px solid #e4eae1; border-radius:10px; background:#fbfcfa; }
+.customer-summary p { margin:6px 0; color:#637064; font-size:13px; line-height:1.45; overflow-wrap:anywhere; }
+.customer-summary strong { color:#3c493e; }
+.customer-summary button,.orders-list-heading button { min-height:36px; margin-top:11px; padding:0 13px; font-size:12px; }
+.orders-list-heading { display:flex; align-items:center; justify-content:space-between; gap:15px; }
+.orders-list-heading button { margin-top:0; }
+.customer-directory:empty::after { content:"No customers have placed orders yet."; color:#758075; font-size:13px; }
+.orders-panel h2 { margin: 0; font: 600 25px/1.2 Georgia,serif; }
+.orders-table { min-width: 900px; }
+.orders-table td { white-space: pre-line; vertical-align: top; line-height: 1.5; }
+.orders-table a { color: #315c3d; font-weight: 700; }
+.orders-table input[type="checkbox"] { width:18px; height:18px; vertical-align:middle; accent-color:#315c3d; }
+.orders-table .completed-row td { color:#788378; background:#f5f8f3; }
+.status-label { display:inline-flex; align-items:center; gap:7px; white-space:nowrap; cursor:pointer; }
+[role="status"] { margin-top: 15px; }
+@media(max-width:560px) { th,td { padding: 12px 7px; font-size: 12px; } input { width: 88px; } .stock-input { width: 72px; } }

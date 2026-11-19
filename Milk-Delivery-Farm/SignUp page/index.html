@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f2">
+  <title>Create your account | Ksheeramruth Dairy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="signup-layout">
+    <section class="welcome-panel" aria-label="Ksheeramruth Dairy">
+      <a class="brand" href="../index.html" aria-label="Ksheeramruth Dairy home">
+        <img src="images/milkcanlogo.png" alt="">
+        <span>Ksheeramruth Dairy</span>
+      </a>
+      <div class="welcome-copy">
+        <span class="eyebrow">FRESH FROM OUR FARM</span>
+        <h1>Good mornings<br>start here.</h1>
+        <p>Make an account to enjoy farm-fresh favorites delivered to your door.</p>
+      </div>
+      <p class="panel-note">Freshness you can trust, every day.</p>
+    </section>
+
+    <section class="form-panel" aria-labelledby="signup-title">
+      <a class="mobile-brand" href="../index.html">← Back to Ksheeramruth Dairy</a>
+      <div class="form-heading">
+        <span class="eyebrow">JOIN THE FARM</span>
+        <h2 id="signup-title">Create your account</h2>
+        <p>Add your details to create your account.</p>
+      </div>
+      <form data-flow="signup" class="signup-form">
+        <label for="email">Email address</label>
+        <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+
+        <label for="name">Full name</label>
+        <input id="name" type="text" name="name" placeholder="Your name" autocomplete="name" required>
+
+        <label for="mobile">Mobile number</label>
+        <input id="mobile" type="tel" name="mobile" placeholder="10-digit mobile number" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" required>
+
+        <label for="address">Delivery address</label>
+        <textarea id="address" name="address" placeholder="House, street, area, city and PIN code" autocomplete="street-address" rows="3" required></textarea>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="At least 6 characters" minlength="6" autocomplete="new-password" required>
+
+        <label for="confirm">Confirm password</label>
+        <input id="confirm" type="password" name="confirm" placeholder="Enter your password again" minlength="6" autocomplete="new-password" required>
+
+        <label class="remember-row"><input type="checkbox" name="remember" checked> <span>Keep me signed in on this device</span></label>
+        <button class="signupbtn" type="submit">Create account <span aria-hidden="true">→</span></button>
+        <p class="terms">By creating an account, you agree to our Terms &amp; Privacy.</p>
+      </form>
+      <p class="login-prompt">Already have an account? <a href="../Login%20page/index.html">Log in</a></p>
+      <a class="home-link" href="../index.html">← Return to home</a>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>

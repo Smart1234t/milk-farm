@@ -1,0 +1,65 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(36, 36, 65);
+
+}
+html,body{
+    height: 100%;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url("cow.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;background-attachment: fixed;
+}
+.container {
+    background-color: rgb(165, 170, 168);
+    min-height: 730px;
+    width: min(600px, calc(100% - 32px));
+   margin:20px auto;
+   padding:30px;
+   border-radius: 8px;
+   overflow: auto;
+}
+
+.location-picker { margin: 14px 0 22px; padding: 16px; border-radius: 10px; background: rgba(255,255,255,.72); }
+.location-picker h3 { margin-bottom: 6px; }
+.location-picker p { padding: 4px 0; font-size: 13px; line-height: 1.5; }
+.location-picker button { padding: 10px 14px; border: 0; border-radius: 7px; background: #315c3d; color: white; font-weight: 700; cursor: pointer; }
+.location-picker iframe { display: block; width: 100%; height: 240px; margin: 12px 0; border: 0; border-radius: 7px; }
+.location-picker a { font-size: 13px; }
+
+input[type="text"],select {
+    background-color: rgb(247, 247, 234);
+    width:100%;
+    padding:15px 0 15px 15px;
+    
+    border-bottom:2px solid rgb(110, 106, 106);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 6px;
+}
+p{
+    padding :10px;
+}
+input[type="submit"]{
+background-color: rgb(73, 69, 69);
+padding:14px 10px 14px 10px;
+border: none;
+border-radius: 15px;
+font-weight: bold;
+color: white;
+}
+input[type="submit"]:hover {
+    background-color: green;
+}
+h1{
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .container { width: calc(100% - 24px); padding: 22px 16px; }
+}

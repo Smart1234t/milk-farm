@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ksheeramruth Dairy | Customer Account</title><link rel="stylesheet" href="style.css">
+</head>
+<body data-asset-base="../images/" data-order-url="../Address/index.html">
+  <header class="topbar">
+    <a class="brand" href="../index.html">🥛 Ksheeramruth Dairy</a>
+    <nav aria-label="Customer pages">
+      <a id="profile-link" href="../profile/index.html">Profile</a>
+      <a href="orders.html">Order History</a>
+      <a id="admin-nav-item" href="../admin/index.html" hidden>Inventory Admin</a>
+      <a id="admin-orders-link" href="../admin/orders.html" hidden>Orders</a>
+      <button type="button" data-logout>Log out</button>
+    </nav>
+  </header>
+  <main class="dashboard">
+    <section class="welcome"><p class="eyebrow">YOUR FARM ACCOUNT</p><h1>Fresh from our farm</h1><p>Choose from the available products and order for delivery.</p></section>
+
+    <section class="catalog">
+      <div class="section-heading"><div><p class="eyebrow">FRESH FROM OUR FARM</p><h2>Products available to order</h2></div></div>
+      <section class="product-container" id="product-list" aria-live="polite"></section>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Inventory Admin | Ksheeramruth Dairy</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header><a href="../index.html">🥛 Ksheeramruth Dairy</a><div><a href="orders.html">Orders</a> <a href="../store/index.html">View store</a> <button type="button" data-logout>Log out</button></div></header>
+  <main>
+    <a class="back" href="../index.html">← Back to store</a>
+    <section class="panel">
+      <p class="eyebrow">FARM MANAGEMENT</p><h1>Inventory</h1><p class="intro">Set the price and available quantity for each product. Changes appear on the store page after saving.</p>
+      <form data-flow="inventory">
+        <div class="table-wrap"><table><thead><tr><th>Product</th><th>Price (₹)</th><th>Quantity in stock</th></tr></thead><tbody data-inventory-rows></tbody></table></div>
+        <button type="submit">Save inventory</button>
+      </form>
+      <p class="demo-note">This demo stores inventory in this browser only. A deployed multi-user store needs a server-side admin account and shared database.</p>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Orders | Ksheeramruth Dairy</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header><a href="../index.html">🥛 Ksheeramruth Dairy</a><div><a href="index.html">Inventory Admin</a><a href="../store/index.html">View store</a><button type="button" data-logout>Log out</button></div></header>
+  <main>
+    <section class="panel new-users-panel">
+      <p class="eyebrow">CUSTOMER SIGN-UPS</p><h1>New users</h1>
+      <p class="intro">Registered customers stay listed here. Their first order date updates when they place an order.</p>
+      <div class="table-wrap"><table class="orders-table"><thead><tr><th>Joined</th><th>First order</th><th>Name</th><th>Mobile</th><th>Email</th><th>Total orders</th></tr></thead><tbody data-new-user-rows></tbody></table></div>
+    </section>
+    <section class="panel customer-panel">
+      <p class="eyebrow">CUSTOMER DIRECTORY</p><h2>Customers and their orders</h2>
+      <p class="intro">Customer name, mobile, and order count are listed separately. Choose a customer to see every order they placed.</p>
+      <div class="customer-directory" data-customer-summaries></div>
+    </section>
+    <section class="panel orders-panel">
+      <div class="orders-list-heading"><div><p class="eyebrow">ORDER DETAILS</p><h2 data-orders-filter-label>All orders</h2></div><button type="button" data-show-all-orders hidden>Show all orders</button></div>
+      <p class="intro">Tick Completed when an order has been fulfilled.</p>
+      <div class="table-wrap"><table class="orders-table"><thead><tr><th>Order time</th><th>Customer</th><th>Mobile</th><th>Items</th><th>Total</th><th>Delivery address</th><th>Map</th><th>Status</th></tr></thead><tbody data-order-rows></tbody></table></div>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>

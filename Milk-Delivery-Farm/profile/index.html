@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Profile | Ksheeramruth Dairy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="../index.html">🥛 Ksheeramruth Dairy</a><button type="button" data-logout>Log out</button></header>
+  <main class="profile-wrap">
+    <a class="back-link" href="../store/index.html">← Back to products</a>
+    <section class="profile-card">
+      <div class="profile-heading"><span class="avatar" aria-hidden="true">👤</span><div><p class="eyebrow">YOUR ACCOUNT</p><h1 data-profile-name>Your profile</h1><p>Manage your contact and delivery details.</p></div></div>
+      <form data-flow="profile">
+        <label for="name">Full name</label><input id="name" name="name" autocomplete="name" required>
+        <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" readonly>
+        <label for="mobile">Mobile number</label><input id="mobile" name="mobile" type="tel" inputmode="numeric" pattern="[0-9]{10}" autocomplete="tel" placeholder="10-digit mobile number" required>
+        <label for="address">Delivery address</label><textarea id="address" name="address" rows="4" autocomplete="street-address" placeholder="House, street, area, city and PIN code" required></textarea>
+        <button class="save-button" type="submit">Save profile</button>
+      </form>
+      <a class="order-link" href="../store/index.html">Browse products <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>

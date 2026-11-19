@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Address</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form class="container" data-flow="address">
+    
+    <h1>Delivery Address </h1>
+    
+     
+    <hr>
+    <h3>Enter your Address</h3>
+    
+        <p>
+        <select name="city">
+            <option value="Dehradun">Dehradun</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Greater Noida">Greater Noida</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Patna">Patna</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Haridwar">Haridwar</option>
+        </select>
+        
+        </p>
+        
+
+        <p>
+        <input type="text" name="pin" inputmode="numeric" pattern="[0-9]{6}" placeholder="6-digit PIN code" required>
+        </p>
+        
+        <p>
+            <input type="text" required name="house-number" placeholder="House / Flat Number">
+        </p>
+
+        <p>
+            <input type="text" required name="address" placeholder="Enter Your Full Address">
+        </p>
+
+        <section class="location-picker" aria-labelledby="location-title">
+            <h3 id="location-title">Pin your delivery location</h3>
+            <p>We need your current location to confirm delivery. Allow access when your browser asks.</p>
+            <button type="button" id="use-location">Use my current location</button>
+            <p id="location-status" role="status" aria-live="polite">Finding your current location…</p>
+            <input type="hidden" name="latitude" id="latitude">
+            <input type="hidden" name="longitude" id="longitude">
+            <iframe id="location-map" title="Google Map showing delivery location" src="https://maps.google.com/maps?q=Dehradun%2C%20India&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a id="open-map" href="https://www.google.com/maps/search/?api=1&query=Dehradun%2C%20India" target="_blank" rel="noopener">Open in Google Maps</a>
+        </section>
+        
+
+       
+      <p>
+            <input type="submit" value="Save Address">
+        </p>
+        
+        
+    </form>
+    <script src="../app.js"></script>
+</body>
+</html>

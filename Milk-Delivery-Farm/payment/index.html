@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Confirm order | Ksheeramruth Dairy</title><link rel="stylesheet" href="css/styles.css"></head>
+<body>
+  <main class="container">
+    <h1>Confirm your order</h1>
+    <p id="checkout-summary" class="order-summary" aria-live="polite">Loading your order details…</p>
+    <form data-flow="payment">
+      <input type="hidden" name="firstname"><input type="hidden" name="email">
+      <input type="hidden" name="address"><input type="hidden" name="city"><input type="hidden" name="zip">
+      <h2>Payment method</h2>
+      <p>Cash on delivery only. Pay when your order arrives.</p>
+      <input type="hidden" name="payment" value="Cash on delivery">
+      <button type="submit" class="btn">Place order</button>
+      <p><a href="../store/index.html">Back to products</a></p>
+    </form>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>
